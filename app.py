@@ -4,7 +4,7 @@ from sklearn.preprocessing import LabelEncoder
 from flask import Flask, render_template, request
 import pickle
 
-app = Flask(__name__, template_folder='/Users/pragatimehra/Desktop/Delhi/templates'    )
+app = Flask(__name__, template_folder='/Users/namangaur/Desktop/Delhi/templates'    )
 data = pd.read_excel("Cleaned-Delhi-Prices.xlsx")
 model = pickle.load(open('model.pkl', 'rb'))
 le = LabelEncoder()
